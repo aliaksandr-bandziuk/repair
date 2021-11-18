@@ -94,6 +94,8 @@ img {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  background-color: #525291;
+  opacity: 0.9;
 }
 
 .header-bg {
@@ -538,15 +540,35 @@ img {
   padding-top: 170px;
   margin-bottom: 100px;
 }
+@media (max-width: 1200px) {
+  .start h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+}
 .start__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .start__wrapper .img-block {
   flex-basis: 50%;
 }
+@media (max-width: 1200px) {
+  .start__wrapper .img-block {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 .start__wrapper .text-block {
   flex-basis: 50%;
+}
+@media (max-width: 1200px) {
+  .start__wrapper .text-block {
+    flex-basis: 100%;
+  }
 }
 .start__wrapper .text-block p {
   margin-bottom: 42px;
@@ -562,19 +584,42 @@ img {
   padding-top: 200px;
   padding-bottom: 150px;
 }
+@media (max-width: 1000px) {
+  .heroes {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
 .heroes .boss-two {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
 }
+@media (max-width: 1000px) {
+  .heroes .boss-two {
+    flex-direction: column-reverse;
+    margin-bottom: 60px;
+  }
+}
 .heroes .boss-two__text {
   flex-basis: 50%;
+}
+@media (max-width: 1000px) {
+  .heroes .boss-two__img {
+    margin-bottom: 30px;
+  }
 }
 .heroes .coworkers .coworker {
   display: flex;
   justify-content: space-between;
   margin-bottom: 115px;
+}
+@media (max-width: 1000px) {
+  .heroes .coworkers .coworker {
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+  }
 }
 .heroes .coworkers .coworker:last-child {
   margin-bottom: 0;
@@ -585,19 +630,35 @@ img {
 .heroes .coworkers .coworker__text {
   flex-basis: 50%;
 }
+@media (max-width: 1000px) {
+  .heroes .coworkers .coworker__text {
+    margin-bottom: 30px;
+  }
+}
 .heroes .coworkers .coworker__text h2 {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: normal;
   font-size: 56px;
-  line-height: 50px;
+  line-height: 60px;
   color: #FFFFFF;
   margin-bottom: 105px;
+}
+@media (max-width: 1000px) {
+  .heroes .coworkers .coworker__text h2 {
+    margin-bottom: 30px;
+  }
 }
 .cars {
   padding-top: 90px;
 }
 .cars__title {
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .cars__title {
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 .cars__text {
   font-family: "Open Sans Condensed", sans-serif;
@@ -606,6 +667,12 @@ img {
   line-height: 50px;
   text-align: center;
   margin-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .cars__text {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 .cars__images {
   padding-bottom: 150px;
@@ -617,6 +684,9 @@ img {
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: repeat(2, 1fr);
   grid-gap: 20px;
+}
+.cars__images .popup-gallery .popup-img {
+  filter: drop-shadow(0px 0px 100px rgba(158, 158, 188, 0.5));
 }
 .cars__images .popup-gallery .popup-img:nth-child(1) {
   grid-column: span 3;

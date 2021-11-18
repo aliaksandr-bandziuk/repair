@@ -15,6 +15,29 @@ $(document).ready(function() {
   });
 });
 
+// change main header on scroll
+const changeMainHeader = () => {
+  
+  const startCount = 150;
+  let header = document.querySelector('.header');
+  let logoImg = document.querySelector('.logo-img');
+  let headerBody = document.querySelector('.header__body');
+  let headerLink = document.querySelectorAll('.header__link');
+
+  if(window.pageYOffset > startCount) {
+    header.classList.add('header-bg');
+    headerBody.style.height = '100px';
+    
+  } else {
+    header.classList.remove('header-bg');
+    headerBody.style.height = '140px';
+  }
+
+}
+
+window.onscroll = changeMainHeader;
+changeMainHeader();
+
 // change header on scroll
 const changeHeader = () => {
   
