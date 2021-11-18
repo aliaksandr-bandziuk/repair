@@ -1,0 +1,102 @@
+@import 'variables';
+
+/* mixins */
+%bg-blue {
+	background-color: #525291;
+	-webkit-clip-path: polygon(100% 10%, 100% 90%, 0% 100%, 0 100%, 0 0);
+	clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 100%, 0 0);
+	@media (max-width: 1000px) {
+		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 100%, 0 0);
+		clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 100%, 0 0);
+	}
+}
+
+%bg-blue-lil {
+	background-color: #525291;
+	-webkit-clip-path: polygon(100% 4%, 100% 96%, 0% 100%, 0 100%, 0 0);
+	clip-path: polygon(100% 4%, 100% 96%, 0 100%, 0 100%, 0 0);
+	@media (max-width: 1000px) {
+		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 100%, 0 0);
+		clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 100%, 0 0);
+	}
+}
+
+%h1-black {
+	font-family: $font-titles;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 66px;
+	line-height: 72px;
+	text-align: center;
+	color: #000000;
+}
+
+%h2-white {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 72px;
+}
+%h2-black {
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 72px;
+}
+%h2-litle {
+	font-size: 30;
+	line-height: 50;
+}
+%button {
+	padding: 1.3em 3em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background: linear-gradient(180deg, #FFD237 0%, #B4962F 100%);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	&:hover {
+		background-color: #B4962F;
+		box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+		color: #fff;
+		transform: translateY(-7px);
+	 }
+	 &:active {
+		transform: translateY(-1px);
+	 }
+ }
+
+ %good-hover {
+	background-color: #B4962F;
+		-webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+		-webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+	transform: translateY(-7px);
+ }
+
+%text-about {
+	font-family: $gilroy-md;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+%text-about-white {
+	font-family: $gilroy-md;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 50px;
+	color: #f0f0f0;
+}

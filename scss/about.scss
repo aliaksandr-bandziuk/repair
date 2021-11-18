@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'mixins';
+@import 'main';
+@import "header";
+@import "footer";
+
+img {
+  filter: drop-shadow(0px 0px 100px rgba(68, 68, 72, 0.5));
+  border-radius: 5px;
+}
+
+.header-black {
+  color: #000;
+}
+
+.start {
+  h1 {
+    padding-top: 170px;
+    @extend %h1-black;
+    margin-bottom: 100px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .img-block {
+      flex-basis: 50%;
+    }
+    .text-block {
+      flex-basis: 50%;
+      p {
+        @extend %text-about;
+        margin-bottom: 42px;
+      }
+      .uppercase {
+        text-transform: uppercase;
+        font-family: $font-titles;
+        font-size: 28px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.heroes {
+  @extend %bg-blue-lil;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  .boss-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    &__text {
+      flex-basis: 50%;
+      @extend %text-about-white;
+    }
+    // &__img {
+    // }
+  }
+  .coworkers {
+    .coworker {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 115px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__img {
+        flex-basis: 50%;
+      }
+      &__text {
+        flex-basis: 50%;
+        h2 {
+          font-family: $font-titles;
+          font-weight: normal;
+          font-size: 56px;
+          line-height: 50px;
+          color: #FFFFFF;
+          margin-bottom: 105px;
+        }
+        p {
+          @extend %text-about-white;
+        }
+      }
+    }
+  }
+}
+
+.cars {
+  padding-top: 90px;
+  &__title {
+    @extend %h2-black;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-family: $font-titles;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &__images {
+    padding-bottom: 150px;
+    width: 80%;
+    margin: 0 auto;
+    .popup-gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: repeat(2, 1fr);
+      grid-gap: 20px;
+      .popup-img:nth-child(1) {
+        grid-column: span 3;
+      }
+      .popup-img:nth-child(2) {
+        grid-column: span 3;
+      }
+      .popup-img:nth-child(3) {
+        grid-column: span 2;
+      }
+      .popup-img:nth-child(4) {
+        grid-column: span 2;
+      }
+      .popup-img:nth-child(5) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
