@@ -29,7 +29,7 @@
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 140px;
+	// height: 140px;
 	align-items: center;
 	transition: all .3s;
 }
@@ -100,14 +100,19 @@
     font-size: 12px;
   }
 }
+@media (max-width: 767px) {
+	.header__body {
+		height: 50px;
+	}
+}
 
 @media (max-width:767px){
 	body.lock{
 		overflow: hidden;
 	}
-	.header__body {
-		height: 50px;
-	}
+	// .header__body {
+	// 	height: 50px;
+	// }
 	.header__logo {
 		flex: 0 0 40px;
 	}

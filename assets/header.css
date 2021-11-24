@@ -30,7 +30,6 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 140px;
   align-items: center;
   transition: all 0.3s;
 }
@@ -102,12 +101,13 @@
   }
 }
 @media (max-width: 767px) {
-  body.lock {
-    overflow: hidden;
-  }
-
   .header__body {
     height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
   }
 
   .header__logo {

@@ -1,8 +1,12 @@
 @import 'variables';
 @import 'mixins';
 @import 'main';
-@import "header";
+@import "header-main";
 @import "footer";
+
+html {
+	scroll-behavior: smooth;
+}
 
 /*workers-section*/
 .workers {
@@ -260,6 +264,9 @@
 				font-size: 18px;
 				line-height: 50px;
 				text-align: right;
+				@media (max-width: 780px) {
+					text-align: left;
+				}
 			}
 		}
 		.benefit__button {
@@ -284,7 +291,7 @@
 				text-align: center;
 			}
 			@media (max-width: 780px) {
-				width: none;
+				width: 90%;
 			}
 		}
 	}
@@ -323,6 +330,7 @@
 			margin-bottom: 50px;
 			.example__title {
 				font-size: 18px;
+				line-height: 25px;
 				margin-bottom: 10px;
 				text-transform: uppercase;
 			}

@@ -14,14 +14,7 @@ img {
 }
 .start {
   h1 {
-    padding-top: 170px;
-    @extend %h1-black;
-    margin-bottom: 100px;
-    @media (max-width: 1200px) {
-      font-size: 50px;
-      line-height: 50px;
-      margin-bottom: 50px;
-    }
+    @extend %h1-pages;
   }
   &__wrapper {
     display: flex;

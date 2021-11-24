@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixins';
+@import 'main';
+@import "header";
+@import "footer";
+
+body {
+  background-color: #fff; 
+}
+
+.news {
+  h1 {
+    @extend %h1-jobs;
+  }
+  .news__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    .new {
+      position: relative;
+      border: 1px solid #000;
+      background-color: #E6E6E6;
+      width: calc(100% / 3.2);
+      margin-bottom: 40px;
+      // padding-left: 16px;
+      padding-right: 16px;
+      transition: all ease-in-out .2s;
+      @media (max-width: 900px) {
+        width: 49%;
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+      &__img {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 16px;
+      }
+      &__title {
+        font-size: 20px;
+        line-height: 112.2%;
+        padding-bottom: 45px;
+        padding-left: 16px;
+        // word-wrap: break-word;
+      }
+      &__date {
+        border-top: 1px solid #000;
+        font-size: 16px;
+        line-height: 112.2%;
+        bottom: 10px;
+        position: absolute;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 16px;
+
+      }
+      &:hover {
+        -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

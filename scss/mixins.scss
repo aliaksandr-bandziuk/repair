@@ -21,6 +21,16 @@
 	}
 }
 
+%bg-blue-top {
+	background-color: #525291;
+	-webkit-clip-path: polygon(100% 5%, 100% 100%, 0% 100%, 0 100%, 0 0);
+	clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 100%, 0 0);
+	@media (max-width: 1000px) {
+		-webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0 100%, 0 0);
+		clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0 100%, 0 0);
+	}
+}
+
 %h1-black {
 	font-family: $font-titles;
 	font-style: normal;
@@ -29,6 +39,38 @@
 	line-height: 72px;
 	text-align: center;
 	color: #000000;
+}
+
+%h1-black-jobs {
+	font-family: $font-titles;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 72px;
+	text-align: center;
+	color: #000000;
+}
+
+%h1-pages {
+	padding-top: 170px;
+	@extend %h1-black;
+	margin-bottom: 100px;
+	@media (max-width: 1200px) {
+		font-size: 50px;
+		line-height: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+%h1-jobs {
+	padding-top: 170px;
+	@extend %h1-black-jobs;
+	margin-bottom: 100px;
+	@media (max-width: 1200px) {
+		font-size: 50px;
+		line-height: 45px;
+		margin-bottom: 50px;
+	}
 }
 
 %h2-white {
@@ -46,8 +88,24 @@
 	line-height: 72px;
 }
 %h2-litle {
-	font-size: 30;
-	line-height: 50;
+	font-size: 30px;
+	line-height: 50px;
+}
+%h2-services {
+	font-family: $font-titles;
+	font-size: 36px;
+	line-height: 50px;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	color: #000000;
+}
+%h2-services-white {
+	font-family: $font-titles;
+	font-size: 36px;
+	line-height: 50px;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	color: #fff;
 }
 %button {
 	padding: 1.3em 3em;
@@ -99,4 +157,60 @@
 	font-size: 24px;
 	line-height: 50px;
 	color: #f0f0f0;
+}
+
+%servises__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+	.services__title {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+		// height: 48%;
+		h2 {
+			@extend %h2-services;
+		}
+	}
+	.services__img {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
+}
+
+%servises__wrapper-white {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+	.services__title {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+		// height: 48%;
+		h2 {
+			@extend %h2-services-white;
+		}
+	}
+	.services__img {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+	}
 }

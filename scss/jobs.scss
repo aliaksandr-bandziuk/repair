@@ -1,0 +1,104 @@
+@import 'variables';
+@import 'mixins';
+@import 'main';
+@import "header";
+@import "footer";
+
+img {
+  filter: drop-shadow(0 0 100px rgba(68, 68, 72, 0.5));
+  border-radius: 5px;
+}
+
+.jobs-title {
+  @extend %h1-jobs;
+}
+.accordion {
+  padding-bottom: 100px;
+  .block {
+    margin: 0 0 30px 0;
+  }
+  .block__item {
+    margin: 0 0 10px 0;
+    // background-color: #7E7EDA;
+    .block__title {
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+      background-color: transparent;
+      color: #fff;
+      padding: 10px;
+      position: relative;
+      background-color: #7E7EDA;
+    }
+    .block__text {
+      padding: 40px 30px 50px;
+      line-height: 130%;
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 15px;
+      }
+      ul {
+        margin-bottom: 20px;
+        padding-left: 40px;
+        li {
+          list-style-type:circle;
+        }
+      }
+    }
+  }
+  .block._init .block__title {
+    cursor: pointer;
+  }
+  .block._init .block__title {
+    padding: 10px 40px 10px 10px;
+  }
+  .block._init .block__title::before,
+  .block._init .block__title::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: transform 0.3s ease 0s;
+  }
+  .block._init .block__title::after {
+    transform: rotate(-90deg);
+  }
+  .block._init .block__title._active::after {
+    transform: rotate(0deg);
+  }
+  .form__block {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 80%;
+    input {
+      margin-right: 30px;
+      width: calc(100%/3);
+      padding-top: 30px;
+      padding-left: 35px;
+      padding-bottom: 30px;
+      border: 1px solid #525291;
+      border-radius: 5px;
+      @media (max-width: 930px) {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+    button {
+      width: 25%;
+      background: linear-gradient(180deg, #FFD237 0%, #B4962F 100%);
+      border-radius: 5px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-weight: 600;
+      @media (max-width: 930px) {
+        width: 90%;
+      }
+    }
+  }
+}

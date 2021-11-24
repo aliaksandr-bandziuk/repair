@@ -463,6 +463,10 @@ img {
   flex-wrap: wrap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*workers-section*/
 .workers {
   position: relative;
@@ -726,6 +730,11 @@ img {
   line-height: 50px;
   text-align: right;
 }
+@media (max-width: 780px) {
+  .benefits-bg .benefits .cost ul {
+    text-align: left;
+  }
+}
 .benefits-bg .benefits .benefit__button {
   width: 360px;
   color: #000000;
@@ -746,7 +755,7 @@ img {
 }
 @media (max-width: 780px) {
   .benefits-bg .benefits .benefit__button {
-    width: none;
+    width: 90%;
   }
 }
 
@@ -787,6 +796,7 @@ img {
 }
 .examples__items .exapmle .example__title {
   font-size: 18px;
+  line-height: 25px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
