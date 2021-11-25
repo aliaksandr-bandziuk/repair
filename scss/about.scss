@@ -59,6 +59,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    transition: all ease-in-out .2s;
     @media (max-width: 1000px) {
       flex-direction: column-reverse;
       margin-bottom: 60px;
@@ -78,6 +79,7 @@ img {
       display: flex;
       justify-content: space-between;
       margin-bottom: 115px;
+      transition: all ease-in-out;
       @media (max-width: 1000px) {
         flex-direction: column-reverse;
         margin-bottom: 80px;

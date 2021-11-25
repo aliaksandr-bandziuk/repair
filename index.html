@@ -11,6 +11,7 @@
   <title>Ремонт квартир под ключ</title>
   <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
   
@@ -36,27 +37,27 @@
 						<a href="page-services/services.html" class="header__link">Услуги</a>
 					</li>
 					<li>
-						<a href="" class="header__link">Новости</a>
+						<a href="page-news/news.html" class="header__link">Новости</a>
 					</li>
 					<li>
 						<a href="page-jobs/jobs.html" class="header__link">Вакансии</a>
 					</li>
           <li>
-						<a href="" class="header__link">Контакты</a>
+						<a href="page-contacts/contacts.html" class="header__link">Контакты</a>
 					</li>
           <li class="header__icon">
-						<a href="" class="header__link">
-              <img src="img/icons/icon-whatsapp.png" alt="">
+            <a href="https://api.whatsapp.com/send/?phone=9927773747&text=Здравствуйте%2C+я+хочу+сделать+ремонт." class="header__link">
+              <img src="../img/icons/icon-whatsapp.png" alt="">
             </a>
-					</li>
-          <li class="header__icon">
-						<a href="" class="header__link">
-              <img src="img/icons/icon-telegram.png" alt="">
+          </li>
+          <!-- <li class="header__icon">
+            <a href="" class="header__link">
+              <img src="../img/icons/icon-telegram.png" alt="">
             </a>
-					</li>
+          </li> -->
           <li class="header__tel">
-						<a href="" class="header__link">8 983 111 22 33</a>
-					</li>
+            <a href="tel:89831112233" class="header__link">8 983 111 22 33</a>
+          </li>
 				</ul>
 			</nav>
 		</div>
@@ -96,12 +97,12 @@
                   Каждый ремонт показываем публично на нашем канале Yotube и странице Instagram
                 </p>
               </div>
-              <div class="benefit__img">
+              <div class="benefit__img reveal">
                 <img src="img/benefits/benefit1.png" alt="">
               </div>
             </div>
             <div class="benefit">
-              <div class="benefit__img">
+              <div class="benefit__img reveal">
                 <img src="img/benefits/benefit2.png" alt="">
               </div>
               <div class="benefit__text">
@@ -123,7 +124,7 @@
                   Цену фиксируем сразу в договоре на протяжение всего ремонта.  Вам не прийдется ничего  доплачивать /переплачивать
                 </p>
               </div>
-              <div class="benefit__img">
+              <div class="benefit__img reveal">
                 <img src="img/benefits/benefit3.png" alt="">
               </div>
             </div>
@@ -158,7 +159,7 @@
       <div class="container">
         <h2 class="examples__title">посмотрите примеры выполненных работ</h2>
         <p class="examples__text">За год мы сделали уже более 130 объектов</p>
-        <div class="examples__items">
+        <div class="examples__items reveal">
           <div class="exapmle">
             <h3 class="example__title">Ремонт в ЖК Неаполь в городе Сочи</h3>
             <p class="exapmle__text">Площадь: 56 кв м</p>
@@ -193,7 +194,7 @@
     <section class="price" id="price">
       <div class="container">
         <h2>Цены на ремонт квартиры "под ключ"</h2>
-        <div class="price-list">
+        <div class="price-list reveal">
           <div class="price-list__item">
             <h3>Черновой</h3>
             <ul>
@@ -263,7 +264,7 @@
           Наши дизайнеры готовы создать проект вашего будущего интерьера с учетом ваших пожеланий, современных тенденций и особенностей помещения
         </h3>
         <div class="design__description">
-          <div class="design__img">
+          <div class="design__img reveal">
             <img src="img/design.png" alt="">
           </div>
           <div class="design__text">
@@ -272,7 +273,7 @@
             <p>— Анализ планировки, технических возможностей для ремонта;</p>
           </div>
         </div>
-        <div class="form">
+        <div class="form reveal1">
           <form class="pure-form">
             <fieldset>
                 <input type="text" placeholder="Ваше имя" required>

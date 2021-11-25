@@ -608,6 +608,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
+  transition: all ease-in-out 0.2s;
 }
 @media (max-width: 1000px) {
   .heroes .boss-two {
@@ -627,6 +628,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 115px;
+  transition: all ease-in-out;
 }
 @media (max-width: 1000px) {
   .heroes .coworkers .coworker {

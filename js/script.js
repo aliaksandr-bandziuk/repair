@@ -34,6 +34,12 @@ const changeMainHeader = () => {
 window.onscroll = changeMainHeader;
 changeMainHeader();
 
+// scroll reveal
+ScrollReveal().reveal('.reveal', { delay: 300 });
+ScrollReveal().reveal('.reveal1', { delay: 400 });
+ScrollReveal().reveal('.reveal2', { delay: 500 });
+ScrollReveal().reveal('.reveal3', { delay: 600 });
+
 // change header on scroll
 const changeHeader = () => {
   
