@@ -528,6 +528,9 @@ html {
   padding-inline: 40px;
   transition: all 0.2s;
 }
+.workers__content .workers__buttons .cost-btn:hover {
+  cursor: pointer;
+}
 .workers__content .workers__buttons .wh-btn {
   border: 2px solid #FFFFFF;
   border-radius: 5px;
@@ -535,6 +538,9 @@ html {
   padding-bottom: 26px;
   padding-inline: 40px;
   transition: all 0.2s;
+}
+.workers__content .workers__buttons .wh-btn:hover {
+  cursor: pointer;
 }
 @media (max-width: 1110px) {
   .workers__content .workers__buttons .cost-btn {
@@ -902,6 +908,10 @@ html {
   bottom: 30px;
   left: 50%;
   transform: translate(-50%);
+  transition: all 0.2s;
+}
+.price .price-list__item .price-btn:hover {
+  cursor: pointer;
 }
 
 .videos h2 {

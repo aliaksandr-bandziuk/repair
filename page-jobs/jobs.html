@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20879" rel="stylesheet">
   <title>Вакансии</title>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
   <header class="header header-bg">
@@ -64,8 +65,7 @@
   <main>
     <section class="jobs-title">
       <div class="container">
-        <h1>В связи с расширением деятельности компании мы производим дополнительный набор
-          высококвалифицированных специалистов на следующие позиции:</h1>
+        <h1>В связи с расширением деятельности компании мы производим набор специалистов на следующие позиции:</h1>
       </div>
     </section>
     <section class="accordion">
@@ -132,8 +132,8 @@
         <div class="form__block">
           <form class="pure-form">
             <fieldset>
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="text" placeholder="Ваш номер телефона" required>
+                <input type="text" class="form-name-jobs" placeholder="Ваше имя" required>
+                <input type="text" class="form__phone-jobs" placeholder="Ваш номер телефона" required>
                 <button type="submit" class="pure-button pure-button-primary">Узнать о вакансиях</button>
             </fieldset>
         </form>

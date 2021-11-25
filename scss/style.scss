@@ -63,6 +63,7 @@ html {
 				transition: all .2s;
 				&:hover {
 					@extend %good-hover;
+					cursor: pointer;
 				}
       }
       .wh-btn {
@@ -74,6 +75,7 @@ html {
 				transition: all .2s;
 				&:hover {
 					@extend %good-hover;
+					cursor: pointer;
 				}
       }
 			@media (max-width: 1110px) {
@@ -433,6 +435,10 @@ html {
 				bottom: 30px;
 				left: 50%;
 				transform: translate(-50%);
+				transition: all .2s;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 	}
